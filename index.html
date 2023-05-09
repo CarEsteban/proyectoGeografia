@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa del mundo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+      
+      #mapa {
+        margin: 50px auto;
+        width: 900px;
+        height: 600px;
+        position: relative;
+        background-image: url('./mapamundi_referencia.jpeg');
+        background-size: cover;
+      }
+      
+      #mapa a {
+        position: absolute;
+        display: block;
+      }
+      
+      #america-norte {
+        width: 20%;
+        height: 18%;
+        top: 18%;
+        left: 28%;
+      }
+      
+      #america-sur {
+        width: 16%;
+        height: 20%;
+        top: 50%;
+        left: 26%;
+      }
+      
+      #europa {
+        width: 14%;
+        height: 16%;
+        top: 22%;
+        left: 57%;
+      }
+      
+      #africa {
+        width: 20%;
+        height: 22%;
+        top: 35%;
+        left: 50%;
+      }
+      
+      #asia {
+        width: 30%;
+        height: 24%;
+        top: 27%;
+        left: 70%;
+      }
+      
+      #australia {
+        width: 12%;
+        height: 10%;
+        top: 63%;
+        left: 82%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 class="titulo">Prototipo Juego Geografía</h1>
+    <div id="mapa">
+      <a href="#" id="america-norte"></a>
+      <a href="#" id="america-sur"></a>
+      <a href="#" id="europa"></a>
+      <a href="#" id="africa"></a>
+      <a href="#" id="asia"></a>
+      <a href="#" id="australia"></a>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+    </div>
+  </body>
+</html>
