@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mapa de Geografía Grupo Pendejos</title>
+    <meta charset="UTF-8">
+    <title>Mapa de Geografía GrupoGEOPENDEJOS</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
       
       #mapa {
         margin: 50px auto;
-        width: 900px;
+        width: 985px;
         height: 600px;
         position: relative;
         background-image: url('./mapamundi_referencia.jpeg');
@@ -62,6 +63,7 @@
       }
       
     </style>
+
   </head>
   <body>
     <h1 class="titulo">Prototipo Juego Geografía</h1>
@@ -90,6 +92,16 @@
       <button class="pin">
         <img src="./pin.png" alt="" width="25px" >
       </button>
+      <!-- boton para inicar juego -->
+      <button id="Botonjugar"> Iniciar Juego </button>
+
+      <!-- Ventana Emergente para seleccionar modos de juego -->
+        <div id="VentanaEmergente" class="ventana-emergente">
+            <div class="contenido">
+                <h2>Título de la ventana emergente</h2>
+                <p>Contenido de la ventana emergente</p>
+        </div>
+      <script src="./script.js"></script>
     </div>
   </body>
 </html>
