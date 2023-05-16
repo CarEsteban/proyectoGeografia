@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
 }
 
 .titulo{
-    color: #fff;
+    color: #4e508d;
     font-weight: 500;
     text-align: center;
     margin-top: 50px;
 }
 
 body{
-    background-color: #951b8b;
+    background-color: #F5F5DC;
 }
 
 #mapa a {
@@ -85,7 +85,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 300px;
+    height: 400px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -99,4 +99,44 @@ button {
 
 .ventana-emergente .contenido p {
     margin-bottom: 0;
+}
+
+/* Estilos para la información del cuestionario: Título, imagen, preguntas, boton */
+.form {
+  margin: 0 auto;
+  width: 210px;
+}
+
+.form label{
+  display: block;
+  text-align: right;
+  float: left; 
+}
+
+.form input{
+  display: block;
+  text-align: left;
+  float: right;  
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/*Estilo para aside con puntajes*/
+.puntaje {
+  float:left;
+  width: 15%;
+  height: 150px;
+  background-color: #84a750;
+  position:absolute;
+   top:0;
+   right:0;
 }
