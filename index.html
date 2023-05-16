@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Geografía GrupoGEOPENDEJOS</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
@@ -68,99 +71,93 @@
 
   <body>
 
+
     <h1 class="titulo">Prototipo Juego Geografía</h1>
-    <div id="mapa">
-      <a href="#" id="america-norte"></a>
-      <a href="#" id="america-sur"></a>
-      <a href="#" id="europa"></a>
-      <a href="#" id="africa"></a>
-      <a href="#" id="asia"></a>
-      <a href="#" id="australia"></a>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
-      <button class="pin">
-        <img src="./pin.png" alt="" width="25px" >
-      </button>
 
-      
 
-      
+    <div class="windows">
       <!-- boton para inicar juego -->
       <button id="Botonjugar"> Iniciar Juego </button>
 
       <!-- Ventana Emergente para seleccionar modos de juego -->
-        <div id="VentanaEmergente" class="ventana-emergente">
-            <div class="contenido">
-                <h2 class="center-text">Banderas</h2>
-                <p> 
-
-                  <form>
-
-                    <div class="center">
-                        <p class="center-text">¿A que país pertenece la siguiente bandera?</p>      
-                        <img class="center-img" src="img_Banderas/guatemala.jpg" width = "200" class="center">
-        
-                    </div>
-        
-                    <br>
-        
-                    <div class="form">
-                        
-                        <label class="center-text" >Ecuador</label>
-                        <input type="radio" name="opcion">
-                        <br>
-        
-                        <label class="center-text" >Francia</label>
-                        <input type="radio" name="opcion">
-                        <br>
-        
-                        <label class="center-text" >Groelandia</label>
-                        <input type="radio" name="opcion">
-                        <br>
-                            
-                        <label class="center-text" >Guatemala</label>
-                        <input type="radio" name="opcion">
-                        <br>
-                        
-                    </div>
-        
-                    <div class="center-text">
-                        <br>
-                        <input type="submit">
-                    </div >
-                  
+      <div id="VentanaEmergente" class="ventana-emergente">
+        <div class="contenido">
+          <h2 class="center-text">Banderas</h2>
+          <p> 
+            <form>
+              <div class="center">
+                <p class="center-text">¿A que país pertenece la siguiente bandera?</p>      
+                <img class="center-img" src="img_Banderas/guatemala.jpg" width = "200" class="center">
+              </div>
+              
+              <br>
       
-                  </form></p>
+              <div class="form">
+                      
+                <label class="center-text" >Ecuador</label>
+                <input type="radio" name="opcion">
+                <br>
+      
+                <label class="center-text" >Francia</label>
+                <input type="radio" name="opcion">
+                <br>
+      
+                <label class="center-text" >Groelandia</label>
+                <input type="radio" name="opcion">
+                <br>
+                          
+                <label class="center-text" >Guatemala</label>
+                <input type="radio" name="opcion">
+                <br>
+                      
+              </div>
+  
+              <div class="center-text">
+                <br>
+                <input type="submit">
+              </div >
+              
+            </form>
+          </p>
         </div>
-<!-- Aside con los puntajes de los jugadores -->
-        
-      <script src="./script.js"></script>
+      </div>
+      
     </div>
-  </body>
+
+
+    <main id="mapa">
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+      <button class="pin">
+        <img src="./pin.png" alt="" width="25px" >
+      </button>
+    </main>
+      
+
 
     <!-- Aside con puntajes de jugaroes -->
-  <aside class="puntaje">
-    <h3 class="center-text"> Puntajes </h3>
-  
-    <ol class="center-text">
-      <li>Primer Lugar</li>
-      <li>Segundo Lugar</li>
-      <li>Tercer Lugar</li>
-      <li>...</li>
-     </ol>
-  </aside>
+    <section class="puntaje">
+      <div class="texto-puntaje">
+        <h2 class="center-text">PUNTAJE ACTUAL</h2>
+        <p ><span>X</span> cantidad de puntos</p>
+      </div>
+    </section>
+        
+    <script src="./script.js"></script>
+  </body>
+
 
 </html>
