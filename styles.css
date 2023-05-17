@@ -20,6 +20,13 @@
     margin-top: 50px;
 }
 
+.titulo_p{
+  color: #4e508d;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 150px;
+}
+
 body{
     background-color: #F5F5DC;
     position: flex;
@@ -74,6 +81,18 @@ button {
     border: none;
     cursor: pointer;
   }
+
+.boton_p {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 8%;
+  margin-left: 33%;
+  height: 100px;
+  width: 450px;
+  font-size: 40px;
+  }  
 
 .ventana-emergente {
     display: none;
