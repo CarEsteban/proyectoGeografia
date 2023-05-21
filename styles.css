@@ -87,36 +87,42 @@ body{
 
 .pin  {
   margin: 65px 100px;
+  background: transparent;
+  border: none;
+}
+
+.pin img:hover{
+  width: 35px;
+  transition: .3s ease-in-out all;
 }
 
 .pin img {
-  width: 15px;
+  width: 25px;
 }
+
 /* Cambiar el cursor cuando se sitúa sobre un botón */
 button,img,input[type="submit"]  {
   cursor: pointer;
 }
 
-
-  
-
-
-/*Estilo para aside con puntajes*/
+/*ASIDE PARA LOS PUNTAJES*/
 .puntaje {
-  width: 50%;
-  height: 150px;
-  background-color: #b9d58f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
+  position: absolute;
+  float: left;
+  top: 30px;
+  left: 50px;
+  width: auto;
+  height: auto;
+}
+
+.puntaje h2,
+.puntaje p {
+  display: inline;
+  font-size: 20px;
 }
 
 
-.texto-puntaje{
-  width: 50%;
-  height: 100%;
-  box-shadow: 0 0 5px 10px #ffff8c ;
-}
 
 /*VENTANA PARA PREGUNTAS*/
 
