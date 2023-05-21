@@ -29,25 +29,24 @@ closeButton.addEventListener("click", function() {
 
 //Definición de variables
 
-document.querySelectorAll(".btnSumarPuntos").forEach(function(elemento){
-    elemento.addEventListener("click", sumarPuntos);
-});
+var botonesSumarPuntos = document.querySelectorAll(".btnPuntos")
+var punteosASumar = [];
 
-document.querySelectorAll(".btnRestarPuntos").forEach(function(elemento){
-    elemento.addEventListener("click", restarPuntos);
-});
 
-var punteo = 0
-
-function sumarPuntos(){
-
-    punteo += 10
-    document.querySelector("#contadorPuntos").innerHTML=punteo
-
-}
-function restarPuntos(){
-
-    punteo -= 10
-    document.querySelector("#contadorPuntos").innerHTML=punteo
-
-}
+// Agregar evento "click" a los botones para guardar los valores en el array
+botonesSumarPuntos.forEach(function(boton) {
+    boton.addEventListener('click', function() {
+      var valorSeleccionado = boton.value;
+      punteosASumar.push(valorSeleccionado);
+    });
+  });
+  
+  // Evento "click" en el botón closeButton para sumar los valores del array
+  closeButton.addEventListener('click', function() {
+    var suma = 0;
+    punteosASumar.forEach(function(valor) {
+      suma += parseInt(valor);
+    });
+    document.querySelector("#contadorPuntos").innerHTML=suma
+    // Resto del código para mostrar o utilizar la suma de los valores
+  });
