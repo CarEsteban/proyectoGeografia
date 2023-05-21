@@ -10,6 +10,44 @@
 var boton = document.getElementById("quintaPregunta");
 const ventanaEmergente = document.getElementById('VentanaEmergente');
 
+var closeButton = document.getElementById("closeButton");
+
 boton.addEventListener("click", function() {
     ventanaEmergente.style.display = 'block';
 });
+closeButton.addEventListener("click", function() {
+    ventanaEmergente.style.display = 'none';
+});
+
+
+
+
+
+
+
+//CÓDIGO PARA PUNTOS
+
+//Definición de variables
+
+document.querySelectorAll(".btnSumarPuntos").forEach(function(elemento){
+    elemento.addEventListener("click", sumarPuntos);
+});
+
+document.querySelectorAll(".btnRestarPuntos").forEach(function(elemento){
+    elemento.addEventListener("click", restarPuntos);
+});
+
+var punteo = 0
+
+function sumarPuntos(){
+
+    punteo += 10
+    document.querySelector("#contadorPuntos").innerHTML=punteo
+
+}
+function restarPuntos(){
+
+    punteo -= 10
+    document.querySelector("#contadorPuntos").innerHTML=punteo
+
+}

@@ -33,26 +33,27 @@
               <div class="form">
                       
                 <label class="center-text" >Ecuador</label>
-                <input type="radio" name="opcion" value="0">
+                <input type="radio" name="option" class="btnRestarPuntos" >
                 <br>
       
                 <label class="center-text" >Francia</label>
-                <input type="radio" name="opcion" value="0">
+                <input type="radio" name="option" class="btnRestarPuntos" >
                 <br>
       
                 <label class="center-text" >Groelandia</label>
-                <input type="radio" name="opcion" value="0">
+                <input type="radio" name="option" class="btnRestarPuntos" >
                 <br>
                           
                 <label class="center-text" >Guatemala</label>
-                <input type="radio" name="opcion" value="10">
+                <input type="radio" name="option" class="btnSumarPuntos" >
                 <br>
                       
               </div>
   
               <div class="center-text">
                 <br>
-                <input type="submit">
+                <button type="button" id="closeButton">Enviar</button>
+                <p>Revise el punteo despúes de presionar una opción</p>
               </div >
               
             </form>
@@ -66,7 +67,7 @@
     -->
     <section class="puntaje">
       <h2>PUNTAJE ACTUAL: </h2>
-      <p><span>X</span> puntos</p>
+      <p><span id="contadorPuntos"> 0 </span> puntos</p>
     </section>
     <main class="mapa">
       <button class="pin" >
