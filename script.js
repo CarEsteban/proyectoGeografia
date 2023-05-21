@@ -6,20 +6,12 @@ var botones = document.querySelectorAll(".pin");
 var closeButtons = document.querySelectorAll(".closeButton");
 
 //variables para las ventanas
-var ventanaUno = document.getElementById('preguntaUno');
-var ventanaDos = document.getElementById('preguntaDos');
-var ventanaTres = document.getElementById('preguntaTres');
-var ventanaCuatro = document.getElementById('preguntaCuatro');
-var ventanaCinco = document.getElementById('preguntaCinco');
-var ventanaSeis = document.getElementById('preguntaSeis');
-var ventanaSiete = document.getElementById('preguntaSiete');
-var ventanaOcho = document.getElementById('preguntaOcho');
-
-var ventanasEmergentes = [ventanaUno,ventanaDos,ventanaTres,ventanaCuatro,ventanaCinco,ventanaSeis,ventanaSiete,ventanaOcho]
+var ventanasEmergentes = document.querySelectorAll(".ventana-emergente");
 
 //Variables para sumar los puntos
 var botonesSumarPuntos = document.querySelectorAll(".btnPuntos")
 var punteosASumar = [];
+var contadorPuntos = document.querySelector("#contadorPuntos");
 
 //Para poder abrir las ventanas emergentes
 Array.from(botones).forEach(function(boton) {
@@ -39,11 +31,10 @@ Array.from(closeButtons).forEach(function(boton) {
     punteosASumar.forEach(function(valor) {
       suma += parseInt(valor);
     });
-    document.querySelector("#contadorPuntos").innerHTML=suma
+    contadorPuntos.innerHTML=suma
     
   });
 });
-
 
 botonesSumarPuntos.forEach(function(boton) {
   boton.addEventListener('click', function() {
@@ -51,4 +42,3 @@ botonesSumarPuntos.forEach(function(boton) {
     punteosASumar.push(valorSeleccionado);
   });
 });
-  
